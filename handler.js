@@ -648,9 +648,9 @@ global.dfail = (type, m, conn) => {
   }[type]
   if (owr) return conn.sendSticker(m.chat, 'https://telegra.ph/file/2848948d64ea43302c882.png', m ,{sendEphemeral: true})
   let msg = {
-    owner: 'Khusus owner',
+    owner: '*LU BUKAN OWNER GUA ANJG*',
     mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
-    premium: 'Khusus premium',
+    premium: '_*BELI PREMIUM DULU BANG*_',
     group: 'Fitur ini untuk di Group',
     private: 'Perintah ini hanya dapat digunakan di Chat Pribadi!',
     admin: 'Khusus Admin group',
@@ -662,7 +662,7 @@ global.dfail = (type, m, conn) => {
   }[type]
   if (botAdmin) return conn.sendButton(m.chat, botAdmin, 'Lupa Saya', 'Eh iya ya', 'Nanii', m)
   let unreg = {
-    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar LynXzy.16*`
+    unreg: `Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Romli.16*`
   }[type]
   if (unreg) return conn.sendButton(m.chat, `Haii ${name} 👋 Sebelum menggunakan bot ini Harap Verify Terlebih dahulu`, watermark, 'Verify', `#daftar ${name}.17`, { key: { fromMe: false, remoteJid: 'status@broadcast', participant: '0@s.whatsapp.net' }, message: { orderMessage: { message: `©LynnXzy💌_\nJam ${time}`, itemCount: 2022, thumbnail: fs.readFileSync('./src/93278eaa12fd253a4fe3cc08a0b219bc.jpg')}}})
 }
