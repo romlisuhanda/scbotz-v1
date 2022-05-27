@@ -10,7 +10,7 @@ const defaultMenu = {
   before: `
 ╭══════════════════
 ║╭──❉[ *Hai, %name!* ]❉──
-║│➸ 𝖢𝗋𝖾𝖺𝗍𝖾 𝖡𝗒 LynnXzy
+║│➸ Allo Prenn Im ZxyuuBotz
 ║│➸ Tersisa *%limit Limit*
 ║│➸ Role *%role*
 ║│➸ Level 
@@ -29,7 +29,7 @@ const defaultMenu = {
 ║│➸ Waktu: *%time*
 ║│➸ Uptime: *%uptime (%muptime)*
 ║│➸ Database: %rtotalreg dari %totalreg
-║│➸ Sc: github.com/LynnXzy/scbotz-v1
+║│➸ GC:https://chat.whatsapp.com/ItgtoArOdVD46P7S9cA179
 ║╰──────────────────
 ╰════════════════════
 %readmore`.trimStart(),
@@ -37,7 +37,7 @@ const defaultMenu = {
   body: '┃ ✾ %cmd %islimit %isPremium',
   footer: '┗━ꕥ',
   after: `
-*LynnBot@^4.01*
+*ZxyuuBotz@^4.01*
 ${'```%npmdesc```'}
 `,
 }
@@ -228,7 +228,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `┏━━〔 𝐒𝐓𝐀𝐓𝐔𝐒 〕━⬣
+                        "description": `┏━━〔 ZxyuuBotz 〕━⬣
 ┃⬡ 𝘼𝙠𝙩𝙞𝙛 𝙎𝙚𝙡𝙖𝙢𝙖 _*${uptime}*_
 ┃⬡ 𝘽𝙖𝙩𝙚𝙧𝙖𝙞 _*${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}*_
 ┃⬡ _*${Object.keys(global.db.data.users).length}*_ 𝙋𝙚𝙣𝙜𝙜𝙪𝙣𝙖
@@ -238,8 +238,8 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 ┃⬡ _*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}*_ 𝙋𝙚𝙣𝙜𝙜𝙪𝙣𝙖 𝙏𝙚𝙧𝙗𝙖𝙣𝙣𝙚𝙙
 ┃⬡ Note : Fitur RPG Dalam Masa Uji Coba
 ┗━━━━━━━━⬣`.trim(),
-                        "footerText": "𝖢𝗋𝖾𝖺𝗍𝖾 𝖡𝗒 LynnXzy",
-                        "buttonText": "𝖪𝗅𝗂𝗄 𝖣𝗂𝗌𝗂𝗇𝗂",
+                        "footerText": "By Romli",
+                        "buttonText": "Klik Disini",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
